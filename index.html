@@ -14,6 +14,75 @@
         <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     </head>
     <body>
+        <div class="container">
+            <div class="row">
+                <div class="playerInfo">
+                    <form>
+                        <div class="form-group">
+                            <label for="userName">Your Name</label>
+                            <input class="form-control" id="userName" type="text">
+                        </div>
+                        <button class="btn btn-primary" id="start" type="submit">Start</button>
+                    </form>
+                </div>
+            </div><br>
+            <div class="row">
+                <!-- Player 1 Area -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3><span id="p1Name">player 1</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Wins: <span id="p1Wins">0</span></p>
+                            <p>Losses: <span id="p1Losses">0</span></p>
+                            <p>Ties: <span id="p1Ties">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Outcome Area -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span>Result</span>
+                        </div>
+                        <div class="panel-body">
+                            <span id="outcome"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Player 2 Area -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3><span id="p2Name">player 2</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Wins: <span id="p2Wins">0</span></p>
+                            <p>Losses: <span id="p2Losses">0</span></p>
+                            <p>Ties: <span id="p2Ties">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <!-- User Choices -->
+                <div class="col-lg-6">
+                    <button id="rock">Rock</button>
+                    <button id="paper">Paper</button>
+                    <button id="scissors">Scissors</button>
+                </div>
+                <!-- Message Area -->
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="comment-input">Trash Talk Area</label>
+                        <textarea class="form-control" id="message" rows="5"></textarea>
+                    </div>
+                    <button id="message">Send</button>
+                </div>
+            </div>
+        </div>
         <!-- JavaScript -->
         <script src="assets/javascript/script.js"></script>
     </body>
